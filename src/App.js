@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, { useState } from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>WePlay</h1>
+        <label htmlFor="User Name"></label>
+        <input type="text"  />
+        <label htmlFor="Bio"></label>
+        <input type="text"  />
+        <label htmlFor="Select your Level"></label>
+        <input
+          type="checkbox"
+          id="level"
+          name="level"
+          value="beginner"
+
+        />
+
+        <label htmlFor="In What Spirit do you play?"></label>
+        <input
+          type="checkbox"
+          id="spirit"
+          name="spirit"
+          value="fun"
+
+        />
+        <label htmlFor="Prefered Places"></label>
+        <input type="text"  />
+        <label htmlFor="Material"></label>
+        <input type="text"  />
     </div>
   );
 }
